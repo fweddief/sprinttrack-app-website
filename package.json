@@ -5,7 +5,7 @@
     "node": ">=18"
   },
   "scripts": {
-    "start": "serve . -l tcp://0.0.0.0:$PORT"
+    "start": "node scripts/write-supabase-config.js && serve . -l tcp://0.0.0.0:$PORT"
   },
   "dependencies": {
     "serve": "^14.2.4"
