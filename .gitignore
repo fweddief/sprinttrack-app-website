@@ -1,2 +1,5 @@
 # Local Supabase credentials (copy from supabase-config.example.js)
 supabase-config.js
+
+node_modules/
+
