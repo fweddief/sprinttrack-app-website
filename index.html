@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SprintTrack — Train smarter. Sprint faster.</title>
+    <meta
+      name="description"
+      content="SprintTrack is the modern training companion for sprinters — workouts, nutrition, progress, and coaching in one polished app."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-inner" aria-label="Primary">
+        <a class="brand" href="#top">
+          <img src="assets/logo.png" width="36" height="36" alt="" />
+          SprintTrack
+        </a>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#why">Why SprintTrack</a>
+          <a href="#testimonials">Stories</a>
+          <a href="#support">Support</a>
+        </div>
+        <button type="button" class="nav-cta" data-open-notify>Get the app</button>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </nav>
+      <div id="drawer" class="nav-drawer" hidden>
+        <a href="#features">Features</a>
+        <a href="#why">Why SprintTrack</a>
+        <a href="#testimonials">Stories</a>
+        <a href="#support">Support</a>
+        <button type="button" class="nav-cta mobile-wide" data-open-notify>Get the app</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="hero-badge"><span>★ 4.9</span> Loved by focused sprinters</div>
+            <h1>Meet SprintTrack<br /><em>Your lane. Your plan.</em></h1>
+            <p class="section-lede">
+              Structured sprint training, daily nutrition targets, and progress you can feel — wrapped in a calm,
+              athletic interface built for track athletes.
+            </p>
+            <div class="hero-actions">
+              <button type="button" class="btn-primary" data-open-notify>Download SprintTrack</button>
+              <a class="chrome-border btn-ghost" href="#features">See what’s inside</a>
+            </div>
+            <div class="store-row">
+              <span class="store-pill" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"
+                  />
+                </svg>
+                App Store
+              </span>
+              <span class="store-pill" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 010 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"
+                  />
+                </svg>
+                Google Play
+              </span>
+            </div>
+          </div>
+          <div class="phone-stage">
+            <div class="phone-mockup" aria-hidden="true">
+              <div class="screen-slot">
+                <img src="assets/screenshot-dashboard.png" alt="" class="active" data-slide="0" />
+                <img src="assets/screenshot-workouts.png" alt="" data-slide="1" />
+                <img src="assets/screenshot-diet.png" alt="" data-slide="2" />
+                <img src="assets/screenshot-progress.png" alt="" data-slide="3" />
+                <img src="assets/screenshot-profile.png" alt="" data-slide="4" />
+              </div>
+              <img class="bezel" src="assets/iphone-bezel.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="logo-strip">
+        <div class="logo-strip-inner">
+          <span>Trusted morning routines</span>
+          <span class="stars">★★★★★</span>
+          <strong>Built for block starts, max velocity, and meet week</strong>
+          <span class="stars">★★★★★</span>
+          <span>Lime, chrome, and clarity — on and off the track</span>
+        </div>
+      </div>
+
+      <section class="section" id="features">
+        <div class="section-inner">
+          <p class="section-label">The starting line</p>
+          <h2 class="section-title">Used by athletes who live on the curve</h2>
+          <p class="section-lede">
+            Whether you’re sharpening acceleration or managing meet prep, SprintTrack keeps training legible — so you
+            show up confident on race day.
+          </p>
+          <div class="quote-grid">
+            <article class="quote-card chrome-border">
+              <p>“Finally an app that respects sprint weeks — not generic gym templates.”</p>
+              <footer>— College sprinter</footer>
+            </article>
+            <article class="quote-card chrome-border">
+              <p>“The dashboard + calendar combo is stupid simple. I actually stick to it.”</p>
+              <footer>— Club athlete</footer>
+            </article>
+            <article class="quote-card chrome-border">
+              <p>“Nutrition targets match my training days without turning into a spreadsheet.”</p>
+              <footer>— 400m specialist</footer>
+            </article>
+          </div>
+
+          <div class="split">
+            <div>
+              <p class="section-label">Inside the app</p>
+              <h2 class="section-title">What SprintTrack includes</h2>
+              <p class="section-lede">
+                Everything you touch in-app — workouts, fueling, PRs, and progress — is designed to feel cohesive, fast,
+                and premium.
+              </p>
+              <ul class="feature-list">
+                <li>
+                  <div class="feature-icon" aria-hidden="true">📅</div>
+                  <div>
+                    <strong>Training calendar that respects your season</strong>
+                    <span>Week-by-week structure with tags for track, recovery, and rest.</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="feature-icon" aria-hidden="true">🍽</div>
+                  <div>
+                    <strong>Daily nutrition targets & meal guidance</strong>
+                    <span>Macro-forward cards with clear totals — built for busy training days.</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="feature-icon" aria-hidden="true">📈</div>
+                  <div>
+                    <strong>Progress & race storytelling</strong>
+                    <span>PR medals, race timelines, and coaching notes that meet you where you are.</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="feature-icon" aria-hidden="true">⚙️</div>
+                  <div>
+                    <strong>Profile & records in one place</strong>
+                    <span>Personal bests, account basics, and appearance — tuned for quick edits.</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="preview-stack">
+              <img src="assets/screenshot-workouts.png" alt="Workouts screen preview" loading="lazy" />
+              <img src="assets/screenshot-dashboard.png" alt="Dashboard screen preview" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section chrome-border" style="background: var(--white); border-radius: 0; border-inline: 0">
+        <div class="section-inner" id="why">
+          <p class="section-label">Why SprintTrack</p>
+          <h2 class="section-title">Precision training without the noise</h2>
+          <p class="section-lede">
+            SprintTrack focuses on what moves the needle for sprinters: clarity, consistency, and chrome-clean visuals
+            that stay readable when you’re tired.
+          </p>
+          <div class="reasons">
+            <article class="reason-card chrome-border">
+              <h3>Save mental bandwidth</h3>
+              <p>Your week, meals, and milestones surface automatically — fewer tabs, fewer guesses.</p>
+            </article>
+            <article class="reason-card chrome-border">
+              <h3>Built for speed athletes</h3>
+              <p>Language and layouts match track reality: acceleration days, recovery, meets, and goals.</p>
+            </article>
+            <article class="reason-card chrome-border">
+              <h3>A premium daily ritual</h3>
+              <p>Lime accents on black and white keep focus tight — serious tools with a modern finish.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark-band">
+        <div class="section-inner">
+          <span class="tag-new">Spotlight</span>
+          <h2 class="section-title chrome-text">Film Room & race IQ</h2>
+          <p class="section-lede">
+            Review cues, countdowns to your next breakdown, and race timelines — so improvement becomes a habit, not a
+            heroic weekend burst.
+          </p>
+          <div class="dark-panel">
+            <img src="assets/screenshot-film-room.png" alt="The Film Room: AI block-start coaching with score and reference imagery" loading="lazy" />
+            <div>
+              <h3>See the trend, not just the snapshot</h3>
+              <p>
+                SprintTrack connects sessions to outcomes: weekly completion, race deltas against goals, and space for
+                coaching feedback — styled with lime highlights on deep black.
+              </p>
+              <button type="button" class="btn-primary" data-open-notify>Join early access</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="testimonials">
+        <div class="section-inner">
+          <p class="section-label">Community</p>
+          <h2 class="section-title">Athletes talk about SprintTrack</h2>
+          <p class="section-lede">Real voices from athletes who want fewer distractions and more reps that matter.</p>
+          <div class="wall-grid">
+            <article class="wall-card chrome-border">
+              <div class="handle">@stridequiet</div>
+              <p>“The UI feels expensive. I open it daily — that’s rare for training apps.”</p>
+            </article>
+            <article class="wall-card chrome-border">
+              <div class="handle">Coach Priya</div>
+              <p>“Assignments read cleanly for my group. Cards make expectations obvious.”</p>
+            </article>
+            <article class="wall-card chrome-border">
+              <div class="handle">Jamal · 100m</div>
+              <p>“Nutrition rings + workouts finally live together. Less phone fatigue.”</p>
+            </article>
+            <article class="wall-card chrome-border">
+              <div class="handle">Nina · hurdles</div>
+              <p>“Meet week visualization helps my athletes breathe. Simple but sharp.”</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section support-band" id="support">
+        <div class="section-inner">
+          <p class="section-label">Help center</p>
+          <h2 class="section-title">Support & legal</h2>
+          <p class="section-lede">
+            Questions about SprintTrack, your account, or how we handle data — start here. For privacy and terms, the
+            full documents are always linked below.
+          </p>
+          <div class="support-grid">
+            <article class="support-card">
+              <h3>Contact us</h3>
+              <p>
+                Email the team for billing, bugs, feature requests, or general help. We read every message and typically
+                reply within a few business days.
+              </p>
+              <p><a href="mailto:support@sprinttrack.app">support@sprinttrack.app</a></p>
+            </article>
+            <article class="support-card">
+              <h3>Account & safety</h3>
+              <p>
+                SprintTrack provides training and nutrition information for informational purposes only. Always consult a
+                qualified professional before changing diet or exercise — especially if you have a medical condition.
+              </p>
+            </article>
+            <article class="support-card">
+              <h3>Report an issue</h3>
+              <p>
+                Include your device model, OS version, and app version from the Profile or store listing. Screenshots
+                help us reproduce bugs faster.
+              </p>
+              <p><a href="mailto:support@sprinttrack.app?subject=SprintTrack%20issue%20report">Report via email</a></p>
+            </article>
+          </div>
+          <div class="support-legal-row">
+            <strong>Legal</strong>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <span aria-hidden="true">·</span>
+            <a href="terms-of-service.html">Terms of Service</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="ratings">
+        <div class="ratings-inner">
+          <div class="big-stars" aria-hidden="true">★★★★★</div>
+          <h2>Thousands of focused reps ahead</h2>
+          <p>Help us shape the next release — tap below and we’ll ping you when SprintTrack hits your store region.</p>
+          <button type="button" class="btn-primary" data-open-notify>Notify me at launch</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>© <span id="year"></span> SprintTrack. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="#support">Support</a>
+          <a href="privacy-policy.html">Privacy</a>
+          <a href="terms-of-service.html">Terms</a>
+          <a href="mailto:support@sprinttrack.app">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal-overlay" id="notify-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+      <div class="modal chrome-border">
+        <h3 id="modal-title">SprintTrack is on the way</h3>
+        <p>
+          Drop your email where you manage App Store / Play notifications — we’ll reach out when downloads go live in
+          your region.
+        </p>
+        <form class="modal-actions" id="notify-form">
+          <input
+            type="email"
+            name="email"
+            id="notify-email"
+            required
+            autocomplete="email"
+            placeholder="you@email.com"
+            class="chrome-border"
+            style="flex: 1; min-width: 180px; padding: 12px 14px; border-radius: 14px; border: 1px solid rgba(0,0,0,0.12)"
+          />
+          <button type="submit" class="btn-primary" id="notify-submit">Join list</button>
+        </form>
+        <p id="notify-status" class="notify-status" role="status" aria-live="polite"></p>
+        <p style="margin: 0 0 12px; font-size: 0.82rem; color: var(--muted); line-height: 1.45">
+          By joining, you agree to our
+          <a href="terms-of-service.html" style="font-weight: 700; color: var(--lime-dark); text-decoration: underline">Terms of Service</a>
+          and
+          <a href="privacy-policy.html" style="font-weight: 700; color: var(--lime-dark); text-decoration: underline">Privacy Policy</a>.
+        </p>
+        <button type="button" class="modal-close" data-close-modal>Close</button>
+      </div>
+    </div>
+
+    <script src="supabase-config.js"></script>
+    <script>
+      (function () {
+        var yearEl = document.getElementById("year");
+        if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+        var slides = document.querySelectorAll(".screen-slot img");
+        var idx = 0;
+        function showSlide(i) {
+          slides.forEach(function (img, j) {
+            img.classList.toggle("active", j === i);
+          });
+        }
+        /* Slides must be position:absolute and stacked; otherwise inactive opacity:0 reveals black gaps.
+           Crossfade: incoming gets .active + higher z-index so outgoing fades underneath (no black flash). */
+        var motionOk = !window.matchMedia || !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (slides.length > 1 && motionOk) {
+          setInterval(function () {
+            idx = (idx + 1) % slides.length;
+            showSlide(idx);
+          }, 6500);
+        } else if (slides.length) {
+          showSlide(0);
+        }
+
+        var overlay = document.getElementById("notify-modal");
+        var openers = document.querySelectorAll("[data-open-notify]");
+        var closer = document.querySelector("[data-close-modal]");
+        var form = document.getElementById("notify-form");
+        var statusEl = document.getElementById("notify-status");
+        var submitBtn = document.getElementById("notify-submit");
+
+        function clearNotifyStatus() {
+          if (!statusEl) return;
+          statusEl.textContent = "";
+          statusEl.className = "notify-status";
+        }
+
+        function setNotifyStatus(text, kind) {
+          if (!statusEl) return;
+          statusEl.textContent = text;
+          statusEl.className = "notify-status" + (kind ? " is-" + kind : "");
+        }
+
+        function isSupabaseConfigured() {
+          var cfg = window.SPRINTTRACK_SUPABASE;
+          if (!cfg || !cfg.url || !cfg.anonKey) return false;
+          if (String(cfg.url).indexOf("YOUR_PROJECT_REF") !== -1) return false;
+          if (String(cfg.anonKey).indexOf("YOUR_SUPABASE_ANON_KEY") !== -1) return false;
+          return true;
+        }
+
+        function postWaitlistEmail(email) {
+          var cfg = window.SPRINTTRACK_SUPABASE;
+          var base = String(cfg.url).replace(/\/$/, "");
+          return fetch(base + "/rest/v1/waitlist_signups", {
+            method: "POST",
+            headers: {
+              apikey: cfg.anonKey,
+              Authorization: "Bearer " + cfg.anonKey,
+              "Content-Type": "application/json",
+              Prefer: "return=minimal",
+            },
+            body: JSON.stringify({ email: email, source: "website" }),
+          });
+        }
+
+        function openModal() {
+          overlay.hidden = false;
+          overlay.classList.add("open");
+        }
+        function closeModal() {
+          overlay.classList.remove("open");
+          overlay.hidden = true;
+        }
+
+        if (overlay) {
+          overlay.addEventListener("transitionend", function () {
+            if (!overlay.classList.contains("open")) clearNotifyStatus();
+          });
+          overlay.addEventListener("click", function (e) {
+            if (e.target === overlay) closeModal();
+          });
+        }
+
+        openers.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            clearNotifyStatus();
+            openModal();
+          });
+        });
+        if (closer) closer.addEventListener("click", closeModal);
+        if (form) {
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            clearNotifyStatus();
+
+            var raw = (document.getElementById("notify-email") || {}).value || "";
+            var email = raw.trim().toLowerCase();
+            if (!email) return;
+
+            if (!isSupabaseConfigured()) {
+              setNotifyStatus(
+                "Add supabase-config.js (copy supabase-config.example.js) with your Supabase URL and anon key.",
+                "muted"
+              );
+              return;
+            }
+
+            if (submitBtn) {
+              submitBtn.disabled = true;
+              submitBtn.textContent = "Saving…";
+            }
+
+            postWaitlistEmail(email)
+              .then(function (res) {
+                if (res.ok) {
+                  setNotifyStatus("You’re on the list. We’ll be in touch.", "success");
+                  form.reset();
+                  setTimeout(closeModal, 1600);
+                  return;
+                }
+                if (res.status === 409) {
+                  setNotifyStatus("That email is already on the list.", "muted");
+                  return;
+                }
+                return res.text().then(function (body) {
+                  setNotifyStatus("Something went wrong. Try again or email support@sprinttrack.app.", "error");
+                  if (body && console && console.warn) console.warn(body);
+                });
+              })
+              .catch(function () {
+                setNotifyStatus("Network error. Check your connection and try again.", "error");
+              })
+              .finally(function () {
+                if (submitBtn) {
+                  submitBtn.disabled = false;
+                  submitBtn.textContent = "Join list";
+                }
+              });
+          });
+        }
+        var toggle = document.querySelector(".nav-toggle");
+        var drawer = document.getElementById("drawer");
+        if (toggle && drawer) {
+          toggle.addEventListener("click", function () {
+            var open = drawer.classList.toggle("open");
+            drawer.hidden = !open;
+            toggle.setAttribute("aria-expanded", open ? "true" : "false");
+          });
+          drawer.querySelectorAll("a").forEach(function (a) {
+            a.addEventListener("click", function () {
+              drawer.classList.remove("open");
+              drawer.hidden = true;
+              toggle.setAttribute("aria-expanded", "false");
+            });
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
