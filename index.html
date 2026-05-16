@@ -397,14 +397,19 @@
         function postWaitlistEmail(email) {
           var cfg = window.SPRINTTRACK_SUPABASE;
           var base = String(cfg.url).replace(/\/$/, "");
+          var key = String(cfg.anonKey || "");
+          var headers = {
+            apikey: key,
+            "Content-Type": "application/json",
+            Prefer: "return=minimal",
+          };
+          /* Legacy anon JWT uses Bearer + apikey; sb_publishable_* must NOT send Bearer or PostgREST errors (invalid JWT). */
+          if (key.indexOf("eyJ") === 0) {
+            headers.Authorization = "Bearer " + key;
+          }
           return fetch(base + "/rest/v1/waitlist_signups", {
             method: "POST",
-            headers: {
-              apikey: cfg.anonKey,
-              Authorization: "Bearer " + cfg.anonKey,
-              "Content-Type": "application/json",
-              Prefer: "return=minimal",
-            },
+            headers: headers,
             body: JSON.stringify({ email: email, source: "website" }),
           });
         }
@@ -469,7 +474,22 @@
                   return;
                 }
                 return res.text().then(function (body) {
-                  setNotifyStatus("Something went wrong. Try again or email support@sprinttrack.app.", "error");
+                  var detail = "";
+                  try {
+                    var j = JSON.parse(body);
+                    if (j && (j.message || j.error_description || j.hint)) {
+                      detail = String(j.message || j.error_description || j.hint);
+                    }
+                  } catch (e) {}
+                  if (!detail && body) detail = body.slice(0, 120);
+                  setNotifyStatus(
+                    "Could not save (HTTP " +
+                      res.status +
+                      "). " +
+                      (detail ? detail + ". " : "") +
+                      "If this persists, email support@sprinttrack.app.",
+                    "error"
+                  );
                   if (body && console && console.warn) console.warn(body);
                 });
               })
