@@ -339,6 +339,19 @@ a {
   flex-shrink: 0;
 }
 
+.store-pill-lg {
+  padding: 16px 28px;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 800;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.store-pill-lg:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.22);
+}
+
 /* Phone mockup — screenshots behind bezel so chrome + rounded mask sit on top */
 .phone-stage {
   display: flex;
