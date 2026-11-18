@@ -16,4 +16,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://sprinttrack.app/sitemap.xml
+Sitemap: https://www.sprinttrack.app/sitemap.xml

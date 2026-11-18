@@ -8,7 +8,7 @@ const path = require("path");
 const ROOT = path.join(__dirname, "..");
 const BLOG_DIR = path.join(ROOT, "blog");
 const POSTS_PATH = path.join(BLOG_DIR, "posts.json");
-const SITE_URL = (process.env.SITE_URL || "https://sprinttrack.app").replace(/\/$/, "");
+const SITE_URL = (process.env.SITE_URL || "https://www.sprinttrack.app").replace(/\/$/, "");
 const APP_STORE =
   "https://apps.apple.com/us/app/sprinttrack-ai-sprint-coach/id6762912944";
 
