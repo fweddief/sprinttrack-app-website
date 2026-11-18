@@ -3,31 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SprintTrack — Train smarter. Sprint faster.</title>
+    <title>SprintTrack — AI Sprint Coach for iOS | Periodized sprint training</title>
     <meta
       name="description"
-      content="SprintTrack is the modern training companion for sprinters — workouts, nutrition, progress, and coaching in one polished app."
+      content="SprintTrack is the AI sprint coach for iOS: periodized 100m–1600m training, nutrition, PR tracking, and Film Room form analysis. Download on the App Store."
     />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://sprinttrack.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SprintTrack" />
+    <meta property="og:title" content="SprintTrack — AI Sprint Coach for iOS" />
+    <meta property="og:description" content="Science-backed sprint plans, weekly Film Room, and PR tracking for track athletes." />
+    <meta property="og:url" content="https://sprinttrack.app/" />
+    <meta property="og:image" content="https://sprinttrack.app/assets/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SprintTrack — AI Sprint Coach" />
+    <meta name="twitter:description" content="Periodized sprint training on iPhone and iPad." />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "SprintTrack",
+            "url": "https://sprinttrack.app/",
+            "logo": "https://sprinttrack.app/assets/logo.png",
+            "sameAs": ["https://apps.apple.com/us/app/sprinttrack-ai-sprint-coach/id6762912944"]
+          },
+          {
+            "@type": "WebSite",
+            "name": "SprintTrack",
+            "url": "https://sprinttrack.app/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://sprinttrack.app/blog/?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "SprintTrack - AI Sprint Coach",
+            "applicationCategory": "SportsApplication",
+            "operatingSystem": "iOS",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+            "downloadUrl": "https://apps.apple.com/us/app/sprinttrack-ai-sprint-coach/id6762912944"
+          }
+        ]
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=2" />
+    <link rel="stylesheet" href="styles.css?v=3" />
     <link rel="icon" href="assets/logo.png" type="image/png" />
   </head>
   <body>
     <header class="site-header">
       <nav class="nav-inner" aria-label="Primary">
         <a class="brand" href="#top">
-          <img src="assets/logo.png" width="36" height="36" alt="" />
+          <img src="assets/logo.png" width="36" height="36" alt="SprintTrack logo" />
           SprintTrack
         </a>
         <div class="nav-links">
           <a href="#features">Features</a>
           <a href="#why">Why SprintTrack</a>
-          <a href="#testimonials">Stories</a>
+          <a href="blog/index.html">Blog</a>
           <a href="#support">Support</a>
         </div>
         <a class="nav-cta" href="https://apps.apple.com/us/app/sprinttrack-ai-sprint-coach/id6762912944">Get the app</a>
@@ -40,7 +84,7 @@
       <div id="drawer" class="nav-drawer" hidden>
         <a href="#features">Features</a>
         <a href="#why">Why SprintTrack</a>
-        <a href="#testimonials">Stories</a>
+        <a href="blog/index.html">Blog</a>
         <a href="#support">Support</a>
         <a class="nav-cta mobile-wide" href="https://apps.apple.com/us/app/sprinttrack-ai-sprint-coach/id6762912944">Get the app</a>
       </div>
@@ -236,6 +280,18 @@
         </div>
       </section>
 
+      <section class="section chrome-border" style="background: var(--white); border-radius: 0; border-inline: 0" id="blog">
+        <div class="section-inner">
+          <p class="section-label">SprintTrack Blog</p>
+          <h2 class="section-title">Sprint training Q&amp;A</h2>
+          <p class="section-lede">
+            Block starts, periodization, 100m speed, taper week, nutrition, and more — 24+ guides written for sprinters and
+            searchable on <a href="blog/index.html" style="font-weight: 700; color: var(--lime-dark)">our blog</a>.
+          </p>
+          <a class="chrome-border btn-ghost" href="blog/index.html" style="margin-top: 8px">Browse all articles</a>
+        </div>
+      </section>
+
       <section class="section support-band" id="support">
         <div class="section-inner">
           <p class="section-label">Help center</p>
@@ -294,6 +350,7 @@
       <div class="footer-inner">
         <div>© <span id="year"></span> SprintTrack. All rights reserved.</div>
         <div class="footer-links">
+          <a href="blog/index.html">Blog</a>
           <a href="#support">Support</a>
           <a href="privacy-policy.html">Privacy</a>
           <a href="terms-of-service.html">Terms</a>

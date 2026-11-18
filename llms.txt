@@ -1,0 +1,41 @@
+# SprintTrack
+
+> SprintTrack (AI Sprint Coach) is an iOS app for sprinters: periodized training, nutrition, PR tracking, and weekly Film Room video form analysis.
+
+Site: https://sprinttrack.app
+App Store: https://apps.apple.com/us/app/sprinttrack-ai-sprint-coach/id6762912944
+
+## Key pages
+- Home: https://sprinttrack.app/
+- Blog index: https://sprinttrack.app/blog/
+- Privacy: https://sprinttrack.app/privacy-policy.html
+- Terms: https://sprinttrack.app/terms-of-service.html
+
+## Blog articles
+- How Do I Get Faster in the 100m?: https://sprinttrack.app/blog/how-to-get-faster-in-the-100m.html
+- What Are the Best Block Start Drills for Sprinters?: https://sprinttrack.app/blog/best-block-start-drills.html
+- What Is Periodization for Sprinters?: https://sprinttrack.app/blog/what-is-periodization-for-sprinters.html
+- How Many Times per Week Should I Sprint?: https://sprinttrack.app/blog/how-many-times-per-week-should-i-sprint.html
+- What Should Sprinters Eat During Heavy Training Weeks?: https://sprinttrack.app/blog/nutrition-for-sprinters-daily.html
+- How Should I Taper Before a Big Track Meet?: https://sprinttrack.app/blog/how-to-taper-for-a-track-meet.html
+- How Is 100m Training Different From 200m Training?: https://sprinttrack.app/blog/100m-vs-200m-training-differences.html
+- How Do You Train for the 400m?: https://sprinttrack.app/blog/how-to-train-for-the-400m.html
+- What Lifts Are Best for Sprinters?: https://sprinttrack.app/blog/best-lifts-for-sprinters.html
+- How Can Sprinters Prevent Hamstring Injuries?: https://sprinttrack.app/blog/hamstring-injury-prevention-sprinters.html
+- What Is RPE and Why Should Sprinters Log It?: https://sprinttrack.app/blog/what-is-rpe-in-sprint-training.html
+- How Long Should a Sprint Warm-Up Be?: https://sprinttrack.app/blog/how-long-should-sprint-warm-up-be.html
+- When Should Sprinters Wear Spikes vs Trainers?: https://sprinttrack.app/blog/when-to-buy-spikes-sprinters.html
+- What Is the Difference Between Acceleration and Speed Endurance?: https://sprinttrack.app/blog/speed-endurance-vs-acceleration.html
+- How Often Should I Practice Block Starts?: https://sprinttrack.app/blog/how-often-to-practice-block-starts.html
+- Can You Train as a Sprinter Without a Coach?: https://sprinttrack.app/blog/self-coached-sprinter-plan.html
+- What Is a Fly 10m Sprint and Why Test It?: https://sprinttrack.app/blog/what-is-fly-10m-sprint-testing.html
+- Should 100m/200m Sprinters Train for the 800m?: https://sprinttrack.app/blog/800m-training-for-sprinters.html
+- What Should My Pre-Race Routine Look Like for the 100m?: https://sprinttrack.app/blog/pre-race-routine-100m.html
+- Why Should Sprinters Log Every Race Result?: https://sprinttrack.app/blog/how-to-log-race-results.html
+- Can AI Help Coach Sprinters?: https://sprinttrack.app/blog/ai-coaching-for-sprinters.html
+- What Are the Best Apps for Track Sprinters?: https://sprinttrack.app/blog/best-apps-for-track-and-field.html
+- How Do I Improve Max Velocity in Sprinting?: https://sprinttrack.app/blog/how-to-improve-max-velocity.html
+- What Belongs in a Sprinter’s GPP Phase?: https://sprinttrack.app/blog/gpp-workouts-for-sprinters.html
+
+## Topics we cover
+100m training, 200m, 400m, block starts, max velocity, periodization GPP SPP taper, sprint nutrition, hamstring prevention, RPE, meet taper, AI sprint coaching.
