@@ -1,0 +1,496 @@
+{
+  "public": ".",
+  "cleanUrls": false,
+  "redirects": [
+    {
+      "source": "/how-to-get-faster-in-the-100m",
+      "destination": "/blog/how-to-get-faster-in-the-100m.html",
+      "type": 301
+    },
+    {
+      "source": "/how-to-get-faster-in-the-100m/",
+      "destination": "/blog/how-to-get-faster-in-the-100m.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/how-to-get-faster-in-the-100m",
+      "destination": "/blog/how-to-get-faster-in-the-100m.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/how-to-get-faster-in-the-100m/",
+      "destination": "/blog/how-to-get-faster-in-the-100m.html",
+      "type": 301
+    },
+    {
+      "source": "/best-block-start-drills",
+      "destination": "/blog/best-block-start-drills.html",
+      "type": 301
+    },
+    {
+      "source": "/best-block-start-drills/",
+      "destination": "/blog/best-block-start-drills.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/best-block-start-drills",
+      "destination": "/blog/best-block-start-drills.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/best-block-start-drills/",
+      "destination": "/blog/best-block-start-drills.html",
+      "type": 301
+    },
+    {
+      "source": "/what-is-periodization-for-sprinters",
+      "destination": "/blog/what-is-periodization-for-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/what-is-periodization-for-sprinters/",
+      "destination": "/blog/what-is-periodization-for-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/what-is-periodization-for-sprinters",
+      "destination": "/blog/what-is-periodization-for-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/what-is-periodization-for-sprinters/",
+      "destination": "/blog/what-is-periodization-for-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/how-many-times-per-week-should-i-sprint",
+      "destination": "/blog/how-many-times-per-week-should-i-sprint.html",
+      "type": 301
+    },
+    {
+      "source": "/how-many-times-per-week-should-i-sprint/",
+      "destination": "/blog/how-many-times-per-week-should-i-sprint.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/how-many-times-per-week-should-i-sprint",
+      "destination": "/blog/how-many-times-per-week-should-i-sprint.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/how-many-times-per-week-should-i-sprint/",
+      "destination": "/blog/how-many-times-per-week-should-i-sprint.html",
+      "type": 301
+    },
+    {
+      "source": "/nutrition-for-sprinters-daily",
+      "destination": "/blog/nutrition-for-sprinters-daily.html",
+      "type": 301
+    },
+    {
+      "source": "/nutrition-for-sprinters-daily/",
+      "destination": "/blog/nutrition-for-sprinters-daily.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/nutrition-for-sprinters-daily",
+      "destination": "/blog/nutrition-for-sprinters-daily.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/nutrition-for-sprinters-daily/",
+      "destination": "/blog/nutrition-for-sprinters-daily.html",
+      "type": 301
+    },
+    {
+      "source": "/how-to-taper-for-a-track-meet",
+      "destination": "/blog/how-to-taper-for-a-track-meet.html",
+      "type": 301
+    },
+    {
+      "source": "/how-to-taper-for-a-track-meet/",
+      "destination": "/blog/how-to-taper-for-a-track-meet.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/how-to-taper-for-a-track-meet",
+      "destination": "/blog/how-to-taper-for-a-track-meet.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/how-to-taper-for-a-track-meet/",
+      "destination": "/blog/how-to-taper-for-a-track-meet.html",
+      "type": 301
+    },
+    {
+      "source": "/100m-vs-200m-training-differences",
+      "destination": "/blog/100m-vs-200m-training-differences.html",
+      "type": 301
+    },
+    {
+      "source": "/100m-vs-200m-training-differences/",
+      "destination": "/blog/100m-vs-200m-training-differences.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/100m-vs-200m-training-differences",
+      "destination": "/blog/100m-vs-200m-training-differences.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/100m-vs-200m-training-differences/",
+      "destination": "/blog/100m-vs-200m-training-differences.html",
+      "type": 301
+    },
+    {
+      "source": "/how-to-train-for-the-400m",
+      "destination": "/blog/how-to-train-for-the-400m.html",
+      "type": 301
+    },
+    {
+      "source": "/how-to-train-for-the-400m/",
+      "destination": "/blog/how-to-train-for-the-400m.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/how-to-train-for-the-400m",
+      "destination": "/blog/how-to-train-for-the-400m.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/how-to-train-for-the-400m/",
+      "destination": "/blog/how-to-train-for-the-400m.html",
+      "type": 301
+    },
+    {
+      "source": "/best-lifts-for-sprinters",
+      "destination": "/blog/best-lifts-for-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/best-lifts-for-sprinters/",
+      "destination": "/blog/best-lifts-for-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/best-lifts-for-sprinters",
+      "destination": "/blog/best-lifts-for-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/best-lifts-for-sprinters/",
+      "destination": "/blog/best-lifts-for-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/hamstring-injury-prevention-sprinters",
+      "destination": "/blog/hamstring-injury-prevention-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/hamstring-injury-prevention-sprinters/",
+      "destination": "/blog/hamstring-injury-prevention-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/hamstring-injury-prevention-sprinters",
+      "destination": "/blog/hamstring-injury-prevention-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/hamstring-injury-prevention-sprinters/",
+      "destination": "/blog/hamstring-injury-prevention-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/what-is-rpe-in-sprint-training",
+      "destination": "/blog/what-is-rpe-in-sprint-training.html",
+      "type": 301
+    },
+    {
+      "source": "/what-is-rpe-in-sprint-training/",
+      "destination": "/blog/what-is-rpe-in-sprint-training.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/what-is-rpe-in-sprint-training",
+      "destination": "/blog/what-is-rpe-in-sprint-training.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/what-is-rpe-in-sprint-training/",
+      "destination": "/blog/what-is-rpe-in-sprint-training.html",
+      "type": 301
+    },
+    {
+      "source": "/how-long-should-sprint-warm-up-be",
+      "destination": "/blog/how-long-should-sprint-warm-up-be.html",
+      "type": 301
+    },
+    {
+      "source": "/how-long-should-sprint-warm-up-be/",
+      "destination": "/blog/how-long-should-sprint-warm-up-be.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/how-long-should-sprint-warm-up-be",
+      "destination": "/blog/how-long-should-sprint-warm-up-be.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/how-long-should-sprint-warm-up-be/",
+      "destination": "/blog/how-long-should-sprint-warm-up-be.html",
+      "type": 301
+    },
+    {
+      "source": "/when-to-buy-spikes-sprinters",
+      "destination": "/blog/when-to-buy-spikes-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/when-to-buy-spikes-sprinters/",
+      "destination": "/blog/when-to-buy-spikes-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/when-to-buy-spikes-sprinters",
+      "destination": "/blog/when-to-buy-spikes-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/when-to-buy-spikes-sprinters/",
+      "destination": "/blog/when-to-buy-spikes-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/speed-endurance-vs-acceleration",
+      "destination": "/blog/speed-endurance-vs-acceleration.html",
+      "type": 301
+    },
+    {
+      "source": "/speed-endurance-vs-acceleration/",
+      "destination": "/blog/speed-endurance-vs-acceleration.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/speed-endurance-vs-acceleration",
+      "destination": "/blog/speed-endurance-vs-acceleration.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/speed-endurance-vs-acceleration/",
+      "destination": "/blog/speed-endurance-vs-acceleration.html",
+      "type": 301
+    },
+    {
+      "source": "/how-often-to-practice-block-starts",
+      "destination": "/blog/how-often-to-practice-block-starts.html",
+      "type": 301
+    },
+    {
+      "source": "/how-often-to-practice-block-starts/",
+      "destination": "/blog/how-often-to-practice-block-starts.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/how-often-to-practice-block-starts",
+      "destination": "/blog/how-often-to-practice-block-starts.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/how-often-to-practice-block-starts/",
+      "destination": "/blog/how-often-to-practice-block-starts.html",
+      "type": 301
+    },
+    {
+      "source": "/self-coached-sprinter-plan",
+      "destination": "/blog/self-coached-sprinter-plan.html",
+      "type": 301
+    },
+    {
+      "source": "/self-coached-sprinter-plan/",
+      "destination": "/blog/self-coached-sprinter-plan.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/self-coached-sprinter-plan",
+      "destination": "/blog/self-coached-sprinter-plan.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/self-coached-sprinter-plan/",
+      "destination": "/blog/self-coached-sprinter-plan.html",
+      "type": 301
+    },
+    {
+      "source": "/what-is-fly-10m-sprint-testing",
+      "destination": "/blog/what-is-fly-10m-sprint-testing.html",
+      "type": 301
+    },
+    {
+      "source": "/what-is-fly-10m-sprint-testing/",
+      "destination": "/blog/what-is-fly-10m-sprint-testing.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/what-is-fly-10m-sprint-testing",
+      "destination": "/blog/what-is-fly-10m-sprint-testing.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/what-is-fly-10m-sprint-testing/",
+      "destination": "/blog/what-is-fly-10m-sprint-testing.html",
+      "type": 301
+    },
+    {
+      "source": "/800m-training-for-sprinters",
+      "destination": "/blog/800m-training-for-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/800m-training-for-sprinters/",
+      "destination": "/blog/800m-training-for-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/800m-training-for-sprinters",
+      "destination": "/blog/800m-training-for-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/800m-training-for-sprinters/",
+      "destination": "/blog/800m-training-for-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/pre-race-routine-100m",
+      "destination": "/blog/pre-race-routine-100m.html",
+      "type": 301
+    },
+    {
+      "source": "/pre-race-routine-100m/",
+      "destination": "/blog/pre-race-routine-100m.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/pre-race-routine-100m",
+      "destination": "/blog/pre-race-routine-100m.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/pre-race-routine-100m/",
+      "destination": "/blog/pre-race-routine-100m.html",
+      "type": 301
+    },
+    {
+      "source": "/how-to-log-race-results",
+      "destination": "/blog/how-to-log-race-results.html",
+      "type": 301
+    },
+    {
+      "source": "/how-to-log-race-results/",
+      "destination": "/blog/how-to-log-race-results.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/how-to-log-race-results",
+      "destination": "/blog/how-to-log-race-results.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/how-to-log-race-results/",
+      "destination": "/blog/how-to-log-race-results.html",
+      "type": 301
+    },
+    {
+      "source": "/ai-coaching-for-sprinters",
+      "destination": "/blog/ai-coaching-for-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/ai-coaching-for-sprinters/",
+      "destination": "/blog/ai-coaching-for-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/ai-coaching-for-sprinters",
+      "destination": "/blog/ai-coaching-for-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/ai-coaching-for-sprinters/",
+      "destination": "/blog/ai-coaching-for-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/best-apps-for-track-and-field",
+      "destination": "/blog/best-apps-for-track-and-field.html",
+      "type": 301
+    },
+    {
+      "source": "/best-apps-for-track-and-field/",
+      "destination": "/blog/best-apps-for-track-and-field.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/best-apps-for-track-and-field",
+      "destination": "/blog/best-apps-for-track-and-field.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/best-apps-for-track-and-field/",
+      "destination": "/blog/best-apps-for-track-and-field.html",
+      "type": 301
+    },
+    {
+      "source": "/how-to-improve-max-velocity",
+      "destination": "/blog/how-to-improve-max-velocity.html",
+      "type": 301
+    },
+    {
+      "source": "/how-to-improve-max-velocity/",
+      "destination": "/blog/how-to-improve-max-velocity.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/how-to-improve-max-velocity",
+      "destination": "/blog/how-to-improve-max-velocity.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/how-to-improve-max-velocity/",
+      "destination": "/blog/how-to-improve-max-velocity.html",
+      "type": 301
+    },
+    {
+      "source": "/gpp-workouts-for-sprinters",
+      "destination": "/blog/gpp-workouts-for-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/gpp-workouts-for-sprinters/",
+      "destination": "/blog/gpp-workouts-for-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/gpp-workouts-for-sprinters",
+      "destination": "/blog/gpp-workouts-for-sprinters.html",
+      "type": 301
+    },
+    {
+      "source": "/blog/gpp-workouts-for-sprinters/",
+      "destination": "/blog/gpp-workouts-for-sprinters.html",
+      "type": 301
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/blog",
+      "destination": "/blog/index.html"
+    },
+    {
+      "source": "/blog/",
+      "destination": "/blog/index.html"
+    }
+  ]
+}

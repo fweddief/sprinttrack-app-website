@@ -22,8 +22,7 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
-function siteHead({ title, description, canonical, depth, jsonLdExtra }) {
-  const css = depth === 0 ? "../styles.css?v=4" : "../styles.css?v=4";
+function siteHead({ title, description, canonical, jsonLdExtra }) {
   const canon = canonical || SITE_URL;
   const ld = [
     {
@@ -56,25 +55,23 @@ function siteHead({ title, description, canonical, depth, jsonLdExtra }) {
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="${css}" />
-    <link rel="icon" href="${depth === 0 ? "../" : "../"}assets/logo.png" type="image/png" />
+    <link rel="stylesheet" href="/styles.css?v=4" />
+    <link rel="icon" href="/assets/logo.png" type="image/png" />
     <script type="application/ld+json">${JSON.stringify({ "@context": "https://schema.org", "@graph": ld })}</script>
   </head>`;
 }
 
-function blogNav(depth) {
-  const home = depth === 0 ? "../index.html" : "../index.html";
-  const blog = depth === 0 ? "index.html" : "index.html";
+function blogNav() {
   return `    <header class="site-header">
       <nav class="nav-inner" aria-label="Primary">
-        <a class="brand" href="${home}">
-          <img src="${depth === 0 ? "../" : "../"}assets/logo.png" width="36" height="36" alt="" />
+        <a class="brand" href="/">
+          <img src="/assets/logo.png" width="36" height="36" alt="" />
           SprintTrack
         </a>
         <div class="nav-links">
-          <a href="${home}#features">Features</a>
-          <a href="${blog}">Blog</a>
-          <a href="${home}#support">Support</a>
+          <a href="/#features">Features</a>
+          <a href="/blog/">Blog</a>
+          <a href="/#support">Support</a>
         </div>
         <a class="nav-cta" href="${APP_STORE}">Get the app</a>
       </nav>
@@ -86,10 +83,10 @@ function footerScripts() {
       <div class="footer-inner">
         <div>© <span id="year"></span> SprintTrack. All rights reserved.</div>
         <div class="footer-links">
-          <a href="../index.html#support">Support</a>
-          <a href="../privacy-policy.html">Privacy</a>
-          <a href="../terms-of-service.html">Terms</a>
-          <a href="index.html">Blog</a>
+          <a href="/#support">Support</a>
+          <a href="/privacy-policy.html">Privacy</a>
+          <a href="/terms-of-service.html">Terms</a>
+          <a href="/blog/">Blog</a>
         </div>
       </div>
     </footer>
@@ -148,14 +145,13 @@ function generatePost(post) {
     title: `${post.title} | SprintTrack Blog`,
     description: post.description,
     canonical: url,
-    depth: 0,
     jsonLdExtra: jsonLd,
   })}
   <body class="page-shell">
-${blogNav(0)}
+${blogNav()}
     <main class="legal-main blog-article-wrap">
       <article class="legal-inner legal-doc blog-article">
-        <p class="blog-meta"><a href="index.html">Blog</a> · ${esc(post.category)} · ${esc(post.date)}</p>
+        <p class="blog-meta"><a href="/blog/">Blog</a> · ${esc(post.category)} · ${esc(post.date)}</p>
         <h1>${esc(post.title)}</h1>
         <p class="legal-effective">${esc(post.description)}</p>
 ${paragraphs}
@@ -175,9 +171,9 @@ function generateIndex() {
     .map(
       (p) => `          <article class="blog-card chrome-border">
             <p class="blog-card-cat">${esc(p.category)}</p>
-            <h2><a href="${esc(p.slug)}.html">${esc(p.title)}</a></h2>
+            <h2><a href="/blog/${esc(p.slug)}.html">${esc(p.title)}</a></h2>
             <p>${esc(p.description)}</p>
-            <a class="blog-card-link" href="${esc(p.slug)}.html">Read answer →</a>
+            <a class="blog-card-link" href="/blog/${esc(p.slug)}.html">Read answer →</a>
           </article>`
     )
     .join("\n");
@@ -194,7 +190,6 @@ function generateIndex() {
     description:
       "Answers to questions sprinters ask: 100m speed, block starts, periodization, nutrition, taper, and more. By SprintTrack.",
     canonical: `${SITE_URL}/blog/`,
-    depth: 0,
     jsonLdExtra: [
       {
         "@context": "https://schema.org",
@@ -217,7 +212,7 @@ function generateIndex() {
     ],
   })}
   <body class="page-shell">
-${blogNav(0)}
+${blogNav()}
     <main class="section blog-hub">
       <div class="section-inner">
         <p class="section-label">SprintTrack Blog</p>
@@ -294,9 +289,29 @@ function generateLlmsTxt() {
   fs.writeFileSync(path.join(ROOT, "llms.txt"), lines.join("\n"), "utf8");
 }
 
+function generateServeConfig() {
+  const redirects = [];
+  posts.forEach((p) => {
+    redirects.push({ source: `/${p.slug}`, destination: `/blog/${p.slug}.html`, type: 301 });
+    redirects.push({ source: `/${p.slug}/`, destination: `/blog/${p.slug}.html`, type: 301 });
+    redirects.push({ source: `/blog/${p.slug}`, destination: `/blog/${p.slug}.html`, type: 301 });
+    redirects.push({ source: `/blog/${p.slug}/`, destination: `/blog/${p.slug}.html`, type: 301 });
+  });
+  const rewrites = [
+    { source: "/blog", destination: "/blog/index.html" },
+    { source: "/blog/", destination: "/blog/index.html" },
+  ];
+  fs.writeFileSync(
+    path.join(ROOT, "serve.json"),
+    JSON.stringify({ public: ".", cleanUrls: false, redirects, rewrites }, null, 2),
+    "utf8"
+  );
+}
+
 posts.forEach(generatePost);
 generateIndex();
 generateSitemap();
 generateLlmsTxt();
+generateServeConfig();
 
-console.log(`[generate-blog] ${posts.length} posts, index, sitemap.xml, llms.txt`);
+console.log(`[generate-blog] ${posts.length} posts, index, sitemap.xml, llms.txt, serve.json`);
